@@ -9,3 +9,4 @@ classes/
 target/
 sbt-launch.jar
 .ensime
+.ensime_cache
