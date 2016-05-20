@@ -2,6 +2,15 @@ version: '2'
 services:
     api:
         build: target/docker/stage
+
         ports:
             - "9999:9999"
             - "9990:9990"
+    website:
+        ports:
+            - "3000:3000"
+        build: ./public
+        volumes:
+          - ./public:/src
+        depends_on:
+          - api
