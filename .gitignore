@@ -11,3 +11,5 @@ sbt-launch.jar
 .ensime
 .ensime_cache
 node_modules
+bin
+libexec
